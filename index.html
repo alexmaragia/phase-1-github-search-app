@@ -1,33 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
-  <link rel='stylesheet' href='index.css'/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>GitHub Search App</title>
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-  <div id='main'>
-
+  <div id="main">
     <h2>GitHub Search</h2>
-
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+    <form id="github-form">
+      <input id="search" type="text" name="search" placeholder="Search for users or repositories" required/>
+      <input type="submit" name="submit" value="Search"/>
+      <button type="button" id="toggle-search">Switch to Repo Search</button>
     </form>
-
-    <div id='github-container'>
-      <ul id='user-list'>
-
-      </ul>
-
-      <ul id='repos-list'>
-
-      </ul>
+    <div id="error-message" class="error"></div>
+    <div id="loading-message" class="loading"></div>
+    <div id="github-container">
+      <ul id="user-list"></ul>
+      <ul id="repos-list"></ul>
     </div>
-
+    <div id="pagination" class="pagination"></div>
   </div>
-
 </body>
 </html>

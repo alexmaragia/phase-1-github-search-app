@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 #github-container {
@@ -10,4 +12,73 @@
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.loading {
+  color: blue;
+  margin: 10px 0;
+}
+
+.user, .repo {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.user:hover, .repo:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+#user-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#user-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#repos-list a {
+  text-decoration: none;
+  color: #0074D9;
+  font-weight: bold;
+}
+
+#repos-list p {
+  margin: 0;
+}
+
+#toggle-search {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
